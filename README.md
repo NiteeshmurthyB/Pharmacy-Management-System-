@@ -43,7 +43,7 @@ View Presciption
 
 ![p11](https://user-images.githubusercontent.com/58075494/123448448-8c74c280-d5f8-11eb-9731-06a1008cb453.png)
 
-Casier Login Page
+Cashier Login Page
 
 ![p13](https://user-images.githubusercontent.com/58075494/123449083-f8572b00-d5f8-11eb-88a7-e41d4c68c66b.png)
 
