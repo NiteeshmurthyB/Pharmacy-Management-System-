@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pharmacy management  </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=""> Pharmacy Management </a>
+                </div>
+                
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="/cashierLanding">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Logout</a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+  
+
+  <title>Welcome</title>
+
+  <link rel="stylesheet" href="/landing.css">
+
+
+
+  <div class="container">
+    <center>
+    <h3 class="welcome">Welcome Cashier</h3>
+  </center>
+    <hr>
+
+    <div class="card-container">
+
+      <div class="card text-white bg-dark" style="width: 18rem;">
+        <img src="https://thumbs.dreamstime.com/b/medicines-pills-icon-vector-filled-flat-sign-solid-pictogram-isolated-white-symbol-logo-illustration-pixel-perfect-graphics-95489781.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <center>
+          <h5 class="card-title">Stock Entry</h5>
+          <p class="card-text">Enter new medicine stock.</p>
+          <a href="/stockentry" class="btn btn-primary">Click Here</a>
+        </center>
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sjfERKlQgs4cdaGHRxAYWgSHeHcI2FnT3y0iF3hlZjdOv9LibA&s" class="card-img-top" alt="...">
+        <div class="card-body">
+          <center>
+          <h5 class="card-title">View Stock</h5>
+          <p class="card-text">Check for the old stock.</p>
+          <a href="/viewstock" class="btn btn-success">Click Here</a>
+        </center>
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark" style="width: 18rem;">
+        <img src="https://thumbs.dreamstime.com/b/bill-icon-trendy-logo-concept-white-background-del-delivery-logistics-collection-suitable-use-web-apps-mobile-131189453.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <center>
+          <h5 class="card-title">Billing</h5>
+          <p class="card-text">make the bill of the customer</p>
+          <a href="/billing" class="btn btn-secondary">Click Here</a>
+        </center>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+    <%- include("partials/footer") %>   

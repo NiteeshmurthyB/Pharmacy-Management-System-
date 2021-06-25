@@ -1,0 +1,216 @@
+ 
+
+
+
+<%- include("partials/header") %>  
+
+  <meta charset="utf-8">
+    <title>
+      BILL
+    </title>
+  <link rel="stylesheet" href="/bill.css">
+    <link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+      <script src="/bill.js">
+      </script>
+
+  <div class="container">
+    <header>
+      <h1>BILL</h1>
+         <address contenteditable>
+            <p>niteesh bhat</p>
+            <p>kalammanagar </p>
+            <p></p>
+         </address>
+    </header>
+       <table class="customer">
+        <tr>
+          <th>
+            <span contenteditable>Customer Name
+
+            </span>
+          </th>
+          <td>
+            <span contenteditable> 
+
+            </span>
+          </td>
+        </tr>
+        
+        <tr>
+          <th>
+            <span contenteditable>Mobile No.
+
+            </span>
+          </th>
+          <td>
+            <span contenteditable> 
+
+            </span>
+          </td>
+         </tr>
+      
+         <tr>
+         <th>
+           <span contenteditable>Age
+
+           </span>
+          </th>
+          <td>
+            <span contenteditable> 
+
+            </span>
+          </td>
+      </tr>
+      
+      <tr>
+        <th>
+          <span contenteditable>Gender
+
+          </span>
+        </th>
+        <td>
+          <span contenteditable>
+            <select name="gender">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </span>
+        </td>
+      </tr>
+    </table>
+    
+    <table class="meta">
+      <tr>
+        <th>
+          <span contenteditable>Bill No.
+
+          </span>
+        </th>
+        <td>
+          <span contenteditable> 
+
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <span contenteditable>Date
+
+          </span>
+        </th>
+        <td>
+          <span contenteditable>  -  -2020
+
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <span contenteditable>Prescribed By:
+
+        </span>
+      </th>
+        <td>
+          <span contenteditable>Dr.
+
+          </span>
+        </td>
+      </tr>
+   </table>
+
+    <table class="inventory">
+      <thead>
+        <tr>
+          <th>
+            <span contenteditable>Sl.No
+
+            </span>
+          </th>
+          <th>
+            <span contenteditable>Description
+
+            </span>
+          </th>
+          <th>
+            <span contenteditable>Rate
+
+            </span>
+          </th>
+          <th>
+            <span contenteditable>Quantity
+
+            </span>
+          </th>
+          <th>
+            <span contenteditable>Price
+
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="cut">-</a>
+            <span contenteditable>1
+
+            </span></td>
+          <td>
+            <span contenteditable>
+              <%foundStock.forEach(stock=>{%>
+              <select name="selectpayment">
+               
+                <option>Select Medicine</option>
+                <option><%= stock.medicineName %></option>
+                <%})%>
+              </select>
+              
+            </span></td>
+          <td>
+            <span data-prefix>₹
+
+            </span>
+            <span contenteditable>0.00
+
+            </span></td>
+          <td>
+            <span contenteditable>0
+                
+            </span></td>
+          <td>
+            <span data-prefix>₹</span>
+            <span>0.00</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a class="add">+</a>
+    <table class="balance">
+      <tr>
+        <th><span contenteditable>Total</span></th>
+        <td><span data-prefix id="prefix">₹</span><span>0.00</span></td>
+      </tr>
+      <tr>
+        <th><span contenteditable>Amount Paid</span></th>
+        <td><span data-prefix id="prefix">₹</span><span contenteditable>0.00</span></td>
+      </tr>
+      <tr>
+        <th><span contenteditable>Payment Method</span></th>
+        <td><select name="selectpayment">
+            <option>Select Payment</option>
+            <option>Cash</option>
+            <option>Card</option>
+            <option>Wallet</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th><span contenteditable>Balance Due</span></th>
+        <td><span data-prefix id="prefix">₹</span><span>0.00</span></td>
+      </tr>
+    </table>
+
+    <h1 class="thank-you"><span contenteditable>Thank You!</span></h1>
+  </div>
+  <%- include("partials/footer") %>   

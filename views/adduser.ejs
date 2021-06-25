@@ -1,0 +1,68 @@
+<%- include("partials/header") %>
+
+<title>
+  Add New User
+</title>
+<link rel="stylesheet" type="text/css" href="/adduser.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
+
+
+
+<form action="/adduser" method="POST">
+  <br>
+  <br>
+  <div class="container">
+    <div class="card" style="max-width: 35rem;max-height: 650px;">
+      <div id="User" class="class1=card text-center">
+        <h1><strong>Add New User</strong></h1>
+      </div>
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <select name="position" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+            <option selected>Position</option>
+            <option value="Manager">Manager</option>
+            <option value="Pharmacist">Pharmacist</option>
+            <option value="Cashier">Cashier</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">First Name</label>
+            <input type="text" name="firstName" class="form-control" id="inputEmail4" placeholder="Jayanti" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Last Name</label>
+            <input type="text" name="lastName" class="form-control" id="input4" placeholder="Rao" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">User Name</label>
+            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Password</label>
+            <input type="password" name="password" class="form-control" id="input4" placeholder="password" required>
+            <small id="passwordHelpInline" class="text-muted">
+              Must be 8-20 characters long.
+            </small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail4">Mobile Number</label>
+          <input type="text" class="form-control" name="mobileNumber" id="mobileno" placeholder=" " maxlength="10"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-md " type="submit">Add User</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <%- include("partials/footer") %>

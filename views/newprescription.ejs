@@ -1,0 +1,102 @@
+
+<%- include("partials/header") %>   
+
+
+    <title>CREATE NEW PRESCRIPTION</title>
+    <link rel="stylesheet" type="text/css" href="/newprescription.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+
+  
+    <form action="/newprescription" method="POST">
+       <br>
+    <br>
+    <div class="container">
+      <div class="card" style="max-width: 35rem;max-height: 70rem;">
+        <div id="User" class="class1=card text-center">
+          <h2><strong>Create New Prescription</strong></h2>
+        </div>
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom01">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" name="firstName" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" name="lastName" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+    </br></br>
+     <div class="form-group col-md-2">
+          <label for="inputZip">Age</label>
+          <input type="text" name="age" class="form-control" id="inputZip">
+        </div>
+    <br/><br/>  
+    <div class="form-row">
+        <label for="exampleFormControlSelect1">Gender</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>male</option>
+          <option>female</option>
+        </select>
+    </div>
+    <br/><br/>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Address</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="Address" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+    </div>
+    <br/><br/>     
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Date</label>
+          <input type="Date" class="form-control" id="validationCustom03" placeholder="Address" required>
+        </div>      
+               
+
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Contact number</label>
+          <input type="text" class="form-control" id="validationCustom03" name="mobile" placeholder="contact no" maxlength="10" required>
+          <div class="invalid-feedback">
+            Please provide a valid number.
+          </div>
+        </div>           
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom01">Medicine name</label>
+          <input type="text" class="form-control" id="validationCustom01" name="MedicineName" placeholder="name"  required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Dose</label>
+          <input type="number" class="form-control" id="validationCustom02" name="Dose" placeholder="Dose"  required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+    <br/><br/>
+    <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Quantity</label>
+          <input type="number" class="form-control" id="validationCustom02" name="quantity" placeholder="Qty"  required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+    </div>
+         <div id="submit">
+            <button class="btn btn-success btn-md " type="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+    <%- include("partials/footer") %>   

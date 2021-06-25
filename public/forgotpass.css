@@ -1,0 +1,35 @@
+body{
+  background: url(https://images.unsplash.com/photo-1518731903023-4fea2a919abf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  background-repeat: no-repeat;
+
+}
+
+#sc-password{
+  width: 500px;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  text-align: center;
+  background: #D1F2EB;
+  font-family:Prompt;
+}
+
+h1{
+  padding: 2rem;
+  font-weight:bold;
+  font-size: 1rem;
+}
+
+.sc-container{
+  padding-bottom: 3rem;
+}
+
+input[type=text]{
+  border: green;
+  line-height: inherit;
+  height:30px;
+  width:50%;
+}
+
+a{
+  text-align: center;
+}

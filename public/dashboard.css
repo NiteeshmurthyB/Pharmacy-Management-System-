@@ -1,0 +1,35 @@
+body{
+    background:linear-gradient(rgba(138, 93, 93, 0.6),rgba(24, 13, 13, 0.616)),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+	height:100vh;
+	-webkit-background-size:cover ;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-image: cover;
+ 	background-size: 100% 100%;
+	background-position:center center;
+	position:relative;
+}
+.welcome{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h3{
+    color:white;
+    text-align: center;
+}
+
+.card{
+    border-radius: 50px;
+    
+}
+
+.h3{
+    background-color: white;
+}

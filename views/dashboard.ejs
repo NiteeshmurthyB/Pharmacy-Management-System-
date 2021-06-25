@@ -1,0 +1,50 @@
+<%- include("partials/header"); %>   
+
+    <title>Welcome</title>
+   <link rel="stylesheet" href="/dashboard.css">
+
+    <div class="container">
+        <h3 class="welcome">Welcome to Dashboard</h3>
+        <hr>
+        
+        <div class="card-container">
+
+            <div class="card text-white bg-dark" style="width: 18rem;">
+              <img src="https://thumbs.dreamstime.com/b/medicines-pills-icon-vector-filled-flat-sign-solid-pictogram-isolated-white-symbol-logo-illustration-pixel-perfect-graphics-95489781.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center>
+                  <h5 class="card-title">Stock Entry</h5>
+                  <p class="card-text">Enter new medicine stock.</p>
+                  <a href="/stockentry" class="btn btn-primary">Click Here</a>
+                </center>
+                </div>
+              </div>
+              
+              <div class="card text-white bg-dark" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sjfERKlQgs4cdaGHRxAYWgSHeHcI2FnT3y0iF3hlZjdOv9LibA&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center>
+                  <h5 class="card-title">View Stock</h5>
+                  <p class="card-text">Check for the old stock.</p>
+                  <a href="/viewstock" class="btn btn-success">Click Here</a>
+                </center>
+                </div>
+              </div>
+
+              <div class="card text-white bg-dark " style="width: 18rem;">
+                <img src="https://thumbs.dreamstime.com/b/bill-icon-trendy-logo-concept-white-background-del-delivery-logistics-collection-suitable-use-web-apps-mobile-131189453.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center>
+                  <h5 class="card-title">Billing</h5>
+                  <p class="card-text">make the bill of the customer.</p>
+                  <a href="/billing" class="btn btn-info">Click Here</a>
+                </center>
+                </div>
+              </div>
+             
+
+        </div>
+
+    </div>
+
+<%- include("partials/footer") %>   

@@ -1,0 +1,40 @@
+body{
+    background:linear-gradient(rgba(22, 4, 4, 0.774),rgba(27, 1, 1, 0.589)),url("https://wallpaperaccess.com/full/1223045.jpg");
+	height:100vh;
+	-webkit-background-size:cover ;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-image: cover;
+ 	background-size: 100% 100%;
+	background-position:center center;
+	position:relative;
+}
+
+.welcome{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+h3{
+    color:white;
+    text-align: center;
+}
+
+.card {
+    border-radius: 50px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-link{
+	color: white;
+}
+
+.nav-header{
+	color: white;
+}

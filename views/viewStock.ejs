@@ -1,0 +1,39 @@
+<%- include("partials/header"); %>  
+    <title>Add Stock</title>
+    <link rel="stylesheet" type="text/css" href="/viewStock.css">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+      <div class="container">
+            <h1 class="display-4">View Stock</h1>
+            <hr>
+            <a href="/stockentry"><button type="submit" class="btn btn-danger">Add Stock</button></a>
+            <table border="border">
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                         <th>Quantity</th>
+                         <th>Cost Price</th>
+                         <th>Selling price</th>
+                         <th>Edit</th>
+                         <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%foundStock.forEach(stock=>{%>
+
+                        <tr>
+                            <td><%= stock.medicineName %></td>
+                            <td><%= stock.quantity%></td>
+                            <td>&#8377 <%= stock.costPrice%></td>
+                            <td>&#8377 <%= stock.sellingPrice%></td>
+                            <td><a class="btn btn-primary" href="/viewStock/<%=stock._id %>/edit">Edit</a></td>
+                            <td><form action="/viewStock/<%=stock._id%>/?_method=DELETE" method="post">
+                            <button type="submit" class="btn btn-primary btn-dark">Delete</button></form></td>
+                        </tr>
+
+                    <%})%>
+                    
+                </tbody>
+            </table>
+        </div>
+        <%- include("partials/footer"); %>  

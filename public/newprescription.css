@@ -1,0 +1,56 @@
+.col-25{
+	width:35%;
+	padding-left: 2rem;
+}
+
+.col-75{
+	width:55%;
+}
+
+body{
+    background: rgba(255, 255, 255, 0.2) url(https://images.unsplash.com/photo-1508796282630-90541478b4f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}  
+.card{
+    padding: 0.5rem 1rem;
+    margin:0.2rem auto;
+}
+
+
+input[type=text],input[type=number],input[type=date]{
+    box-sizing: content-box;
+    cursor: pointer;
+   	padding: 1px 1px; 
+   	margin:1px 1px;
+    width: 70%;
+}
+
+.form-row{
+	padding-left: 0.5rem;
+	padding-bottom: 0.25rem;
+}
+
+h2{
+    font-family: Kanit;
+    color:#5B2C6F;
+    padding-bottom: 1rem;
+}    
+.container{
+    font-family: Kanit;
+    font-weight: bold;
+    color:#2C3E50 ;
+}
+
+form{
+	padding-bottom: 2rem;
+}

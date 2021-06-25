@@ -1,0 +1,42 @@
+body{
+	background:linear-gradient(rgba(22, 4, 4, 0.774),rgba(27, 1, 1, 0.849)),url("http://wallpaperheart.com/wp-content/uploads/2018/04/view-nature-background-nature.jpg");
+	height:100vh;
+	-webkit-background-size:cover ;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-image: cover;
+ 	background-size: 100% 100%;
+	background-position:center center;
+	position:relative;
+}
+.container{
+	margin: 2rem auto;
+	color: #8E44AD;
+	font-weight: bold;
+	font-family: Barlow;
+}
+
+h1{
+	color:#114488;
+	font-weight: bold;
+}
+
+.form-row{
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+}
+
+.col-7,.col-4{
+	padding-bottom: 1rem;
+}
+.date{
+	margin-left: 4rem;
+}
+
+.col-3,.sp{
+	margin-left: 2rem;
+}
+
+button{
+	float:right;
+}
