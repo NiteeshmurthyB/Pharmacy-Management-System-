@@ -4,10 +4,12 @@
 
 ![p1](https://user-images.githubusercontent.com/58075494/123447873-f2ad1580-d5f7-11eb-9743-0e603a713b32.png)
 
-Login Page
+<h1 align="center" > Login Page</h1>
+
 ![p2](https://user-images.githubusercontent.com/58075494/123448027-1b350f80-d5f8-11eb-91e5-ebb0dcb03f3b.png)
 
-Manager Landing Page
+<h1 align="center" > Manager Landing Page</h1>
+
 ![p3](https://user-images.githubusercontent.com/58075494/123448061-25570e00-d5f8-11eb-8735-2e6247e7390d.png)
 
 Dashboard
